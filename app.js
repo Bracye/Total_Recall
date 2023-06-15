@@ -127,13 +127,9 @@
 // } else {
 //   console.log("monkey");
 // }
-//OBJECTS
 
-// let longest = array.reduce( (firstEl, secondEl) => {
-//         //if the first el is greater than the second el return firstEl
-//         return firstEl.length > secondEl.length ? firstEl : secondEl;
-//     }
-// );
+
+
 
 // console.log(longest)
 
@@ -217,90 +213,87 @@
 // //Print longest word
 
 // printLongestWord = (word) => {
-//   let longestWord = "";
+// //   let longestWord = "";
 
-//   for (let i = 0; i < word.length; i++) {
-//     if (word[i].length > longestWord.length) {
-//       longestWord = word[i];
-//     }
-//   }
+// //   for (let i = 0; i < word.length; i++) {
+// //     if (word[i].length > longestWord.length) {
+// //       longestWord = word[i];
+// //     }
+// //   }
 
-//   return longestWord;
+// //   return longestWord;
+// // };
+
+// // console.log(printLongestWord(["Ernest", "Bracy", "Total", "Recall2"]));
+
+// //Objects
+
+// //User objects
+
+// const user = {
+//   name: "Ernest",
+//   email: "Ernestbracy1@gmail.com",
+//   age: 22,
+//   purchased: [],
 // };
 
-// console.log(printLongestWord(["Ernest", "Bracy", "Total", "Recall2"]));
+// // //update the user
+// const updateUser = { ...user };
 
-//Objects
+// updateUser.email = "Ernestbracy3@gmail.com";
 
-//User objects
+// updateUser.age++;
 
-const user = {
-  name: "Ernest",
-  email: "Ernestbracy1@gmail.com",
-  age: 22,
-  purchased: [],
-};
+// //Add key and values
+// updateUser.location = "Detroit";
 
-// //update the user
-const updateUser = { ...user };
+// console.log(updateUser);
 
-updateUser.email = "Ernestbracy3@gmail.com";
+// //Shopaholic
+// user.purchased.push("carbohydrates");
+// user.purchased.push("peace of mind");
+// user.purchased.push("Merino jodhpurs");
 
-updateUser.age++;
+// // console.log(user.purchased[2]);
 
-//Add key and values
-updateUser.location = "Detroit";
+// //Object within an object
+// const friend = {
+//   name: "Aaron",
+//   age: 22,
+//   location: "Detroit",
+//   purchased: [],
+// };
+// user.friend = friend;
 
-console.log(updateUser);
+// user.friend.age = 55;
 
-//Shopaholic
-user.purchased.push("carbohydrates");
-user.purchased.push("peace of mind");
-user.purchased.push("Merino jodhpurs");
+// user.friend.purchased.push("The One Ring");
 
-// console.log(user.purchased[2]);
+// user.friend.purchased.push("A latte");
 
-//Object within an object
-const friend = {
-  name: "Aaron",
-  age: 22,
-  location: "Detroit",
-  purchased: [],
-};
-user.friend = friend;
+// console.log(user.friend.purchased[1]);
 
-user.friend.age = 55;
+// //User Loop
+// for (let i = 0; i < user.purchased.length; i++) {
+//   console.log(user.purchased[i]);
+// }
 
-user.friend.purchased.push("The One Ring");
+// //User.friend Loop
 
-user.friend.purchased.push("A latte");
+// for (let i = 0; i < user.friend.purchased.length; i++) {
+//   console.log(user.friend.purchased[i]);
+// }
 
-console.log(user.friend.purchased[1]);
+// //functions can create objects
 
-//User Loop
-for (let i = 0; i < user.purchased.length; i++) {
-  console.log(user.purchased[i]);
-}
+// user.updateUser = () => {
+//   user.age++;
+//   user.name = user.name.toUpperCase();
+// };
 
-//User.friend Loop
+// oldAndLoud = person = () => {
+//   person.age++;
+//   person.name = person.name.toUpperCase();
+// };
 
-for (let i = 0; i < user.friend.purchased.length; i++) {
-  console.log(user.friend.purchased[i]);
-}
-
-//functions can create objects
-
-user.updateUser = () => {
-  user.age++;
-  user.name = user.name.toUpperCase();
-};
-
-user.updateUser();
-user.updateUser();
-
-oldAndLoud = person = () => {
-  person.age++;
-  person.name = person.name.toUpperCase();
-};
-
-oldAndLoud(user);
+// oldAndLoud(user);
