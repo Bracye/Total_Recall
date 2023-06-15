@@ -1,9 +1,13 @@
 ## Q + A
 
-1. How do we assign a value to a variable? Assigning a value to a variable will need the operator "=".
-2. How do we change the value of a variable? Assigning a different value to the same variable with the "="
-3. How do we assign an existing variable to a new variable? You have to equal the new variable to the existing variable
-4. Remind me, what are declare, assign, and define? Declaring uses keywords like var, const, and let for the variable to be established, assigning is giving the variable a value, and defining is basically combing both declare and assign to give the value of that variable.
+1. How do we assign a value to a variable?
+   Assigning a value to a variable will need the operator "=".
+2. How do we change the value of a variable?
+   Assigning a different value to the same variable with the "="
+3. How do we assign an existing variable to a new variable?
+   You have to equal the new variable to the existing variable
+4. Remind me, what are declare, assign, and define?
+   Declaring uses keywords like var, const, and let for the variable to be established, assigning is giving the variable a value, and defining is basically combing both declare and assign to give the value of that variable.
 
 Declare is to let js know that there is a variable `let a;`
 To assign a value to the variable. I need to use `=`.
@@ -12,16 +16,10 @@ For example: `let a = 0`
 ### Research
 
 5. What is pseudocoding and why should you do it?
-
-Pseudocoding is writing code in plain spoken language that humans can understand.
-
-It's important because it allows you to write the logic and steps of the you want to accomplish in code without worrying about the rigid syntax.
-
-Psuedocode allows us to break down problems into solvable peices that can be transfered to code.
-
-Psudocode is the bridge between our minds and the code.
+   Pseudocoding is making code more understable. It helps by creating a set plan to logically write out code.
 
 6. What percentage of time should be spent thinking about how you're going to solve a problem vs actually typing in code to solve it?
+
    I think you should take more time thinking about how to solve a problem rather than typing in the code to solve it. Allowing my mind to figure out the problem to the best of my ability will make the coding process much easier because I already have thought of some ways to go about solving the problem. Coding before thinking would definitely create errors and more importantly stress.
 
 ## Strings
@@ -35,6 +33,7 @@ Psudocode is the bridge between our minds and the code.
 - Change the value of secondVariableto any string.
 
 What is the value of firstVariable?
+The value for "firstVar" is 22.
 
 - Create a variable called yourName and set it equal to your name as a string. Then, write an expression that takes the string `"Hello, my name is "` and the variable yourName.
 
@@ -130,8 +129,11 @@ Check your work! Your `bank_account` should have $10,100 in it.
 ### A. Talk about it:
 
 What are the things in an array called?
+Things in an array are called elements or items.
 Do Arrays guarantee those things will be in order?
+Yes, the first element is index as 0.
 What real-life thing could you model with an array?
+A shopping list would work or a music playlist.
 
 ### B. Easy Does It
 
@@ -142,18 +144,26 @@ Create an array that contains three quotes and store it in a variable called quo
 Given the following array `const randomThings = [1, 10, "Hello", true]`
 
 - How do you access the 1st element in the array?
+  I would access the 1st element with console.log and with randomThings[0].
 
 - Change the value of `"Hello"` to `"World"`
+  I would use randomThings[2] = "World" it would change the 3rd element to "World".
 
 - Check the value of the array to make sure it updated the array using `console.log()`
+  I would use console.log(randomThings[2]) to see if it was updated.
 
 ### D. Change values
 
 Given the following array const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"]
 
 What would you write to access the 3rd element of the array?
+ourClass[2]
+
 Change the value of "Github" to "Octocat"
+ourClass[4] = "Octocat"
+
 Add a new element, "Cloud City" to the array
+ourClass.push("Cloud City")
 
 ### E. Mix It Up
 
@@ -162,10 +172,16 @@ Note: You don't really need `.splice()` for these. You could use it, but there a
 Given the following array: `const myArray = [5, 10, 500, 20]`
 
 - Add the string "Aegon"to the end of the array. Add another string of your choice to the end of the array.
+  myArray.push("Aegon") and myArray.push("Dragon")
+
 - Remove the 5from the beginning of the array.
+  myArray.shift()
 - Add the string "Bob Marley"to the beginning of the array.
+  myArray.unshift("Bob Marley")
 - Remove the string of your choice from the end of the array.
+  myArray.pop()
 - Reverse this array using `Array.prototype.reverse()`.
+  myArray.reverse()
 - Did you mutate the array? What does mutate mean? Did the .reverse()method return anything?
 
 ### F. Biggie Smalls
@@ -279,7 +295,7 @@ Write a function calculateCubethat takes a single number and prints the volume o
 
 ## D. isVowel
 
-1. Write a function `isVoweltha`t takes a character (i.e. a string of length 1) and returns `true` if it is a vowel, `false` otherwise.
+1. Write a function `isVowel`that takes a character (i.e. a string of length 1) and returns `true` if it is a vowel, `false` otherwise.
 
 2. The vowel could be upper or lower case.
 
